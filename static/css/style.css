@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif; sans-serif;
+  line-height: 1.6;
+  color: yellowgreen;
+  background-color: blueviolet;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: yellowgreen;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: 0 auto;
+}
+.spotify-embed {
+  align-items: center;
+  width: 800%;
+  max-width: 1000px;
+  height: 300px;
+  border-radius: 24px;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Photo Styling */
+.photo-container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.photo-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .spotify-embed {
+    max-width: 300%;
+    height: 80px;
+  }
+
+  .video-container {
+    max-width: 100%;
+  }
+
+  .photo-container {
+    max-width: 100%;
+  }
+}
